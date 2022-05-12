@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+body{
+  background: linear-gradient(-45deg, #ff3737, #ff97ba, #b062ff,#62ffb0, #68d7ff, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+p{
+    font-size: 50px;
+    margin: 100px;
+    font-family: "futura" 
+    letter-spacing: 700px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+.text1{
+    justify-content: left;
+    text-align: left;
+    margin: 100px;
+}
+  h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: light;
+    font-size: 150px;
+    justify-content: center;
+    letter-spacing: 20px;
+    animation: disco 0.8s ease infinite;
+    line-height: 105px;
+    margin: auto;
+    margin-bottom: 50px;
+
+  }
+    @keyframes disco {
+        0%    {color: #cfffd7;
+             font-style: none;
+            font-weight: normal;}
+        50%   {color: #00c2dc;
+            font-style: italic;font-weight: lighter;}
+        100%   {color: #9effae;
+            font-style: none;font-weight: normal;}
+      }
+      @keyframes discobg {
+        0%    {color: #cfffd7;}
+        50%   {color: #00c2dc;}
+        100%   {color: #9effae;}
+      }
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    text-align: left;
+    opacity: 50%;
+    margin: 0px;
+  }
+  a{
+    margin: 20px;
+    margin-let: -50px;
+    width: 20vh;
+    font-family: 'futura';
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(111, 171, 255);
+    opacity: 50%;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    position: absolute;
+  }
+  a:hover{
+    background-color: white;
+    color:rgb(111, 171, 255);
+  }
+  button{
+    font-family: 'futura';
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgb(111, 171, 255);
+    opacity: 50%;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 0px;
+    border: 0px;
+    position: fixed;
+  }
+  button:hover{
+    background-color: white;
+    color:rgb(111, 171, 255);
+  }
+
+.bigsection{
+    min-height: 100vh;
+    min-width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.smollsection{
+  min-height: 50vh;
+  min-width: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -100px;
+}
+
+.n1n1{
+  text-align: center;
+  margin: auto;
+}
+#n1{
+    color: rgb(111, 171, 255);
+    -webkit-text-stroke-width: 3px;
+    text-shadow: 5px 5px rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 20px;
+    font-family: "futura";
+    background-color: rgb(211, 211, 255);
+    border-radius: 500px;
+    opacity: 50%;
+    min-height: 60vh;
+    min-width: 60vh;
+    max-height: 60vh;
+    max-width: 60vh;
+    margin: auto;
+    text-align: center;
+
+}
+@keyframes bubble {
+  0%    {color: #ffffff;}
+  50%   {color: #00c2dc;}
+  100%   {color: #ffffff;}
+}
+#n1:hover{
+  opacity: 90%;
+  transition: 1s all ease;
+}
+@media (max-width: 900px){
+    section h1{
+      font-size: 200px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    section .text-container{
+      flex-direction: column;
+    }
+  }
+  
+  .reveal{
+    position: relative;
+    transform: translateY(500px) scale(0.5);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  section .container{
+    margin: 50px;
+  }
+  
+  section .text-container{
+     display: flex;
+  }
+  section .text-container .text-box{
+    margin: auto;
+    padding: 100px;
+  }
+  section .text-container .text-box h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+ 

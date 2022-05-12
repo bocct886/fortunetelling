@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fortune-guesser</title>
+        <link rel="stylesheet" href="/Users/blezzeu/Desktop/SPRING SEM/fortune/style.css">
+        <script src="script.js"></script>
+    </head>
+<body>
+
+    <section class="bigsection">
+        <div class="text1">
+<h2>DISCOVER YOUR FORTUNE!</h2>
+    <h1>^ SCROLL DOWN to SEE YOUR FORTUNE ^</h1>
+<a href="/Users/blezzeu/Desktop/SPRING SEM/fortune/fortune.html">ASK ANOTHER QUESTION</a>
+        </div>
+<section>
+
+
+<section class="smollsection">
+  <div class="container reveal text n1n1">
+    <div id="n1">
+      <p id="quotes">Here</p>
+        <button type="button" id="generate">MORE!</button>
+    </div>
+ </div>
+  </section>
+
+<script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+const generateQuote = function() {
+     const quotes = [
+    {quote: "Wealth awaits you very soon.",},
+    {quote: "You must try, or hate yourself for not trying.",},
+    {quote: "A new voyage will fill your life with untold memories.",},
+    {quote: "nah",},
+    {quote: "You cannot love life until you live the life you love.",},
+    {quote: "Your ability for accomplishment will follow with success.",},
+    {quote: "It's better to be alone sometimes.",},
+    {quote: "You will conquer obstacles to achieve success.",},
+    {quote: "The greatest risk is not taking one.",}
+];
+
+    let arrayIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quotes").innerHTML = quotes[arrayIndex].quote;
+
+}
+window.onload = function() {
+    generateQuote();
+    document.getElementById("generate").addEventListener('click', generateQuote);
+}
+</script>
+</body>
+</html>
